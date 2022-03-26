@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="form.css">
     
     <title>Create Database</title>
 </head>
 
 <body class="d-flex text-center text-white bg-dark">
+    
     <form action="/create" method="post">
         
        
-        <label for="Name">Name of the Book</label>
-        <input type="text" name="name" autocomplete="off">
+        <label  for="Name">Name of the Book</label>
+        <input id="book" type="text" name="name" autocomplete="off">
 
-        <label for="Author Name">Author of the Book</label>
-        <input type="text" name="authorName">
+        <label  for="Author Name">Author of the Book</label>
+        <input id="author" type="text" name="authorName" autocomplete="off">
                  
-        <label for="Edition">edition of the Book</label>
-        <input type="number" name="edition"> 
+        <label  for="Edition">edition of the Book</label>
+        <input id="edition" type="number" name="edition" autocomplete="off"> 
 
-        <label for="Price">Price of the Book</label>
-        <input type="number" name="price"> 
+        <label  for="Price">Price of the Book</label>
+        <input id="price" type="number" name="price" autocomplete="off"> 
 
-        <label for="Description">Description of the Book</label>
-        <input type="text" name="description"> 
+        <label  for="Description">Description of the Book</label>
+        <input id="enterDesc" type="text" name="description" autocomplete="off"> 
 
          <button type="submit">Submit</button> 
     </form>
