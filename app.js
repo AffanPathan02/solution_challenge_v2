@@ -5,7 +5,7 @@ const Bookstore = require("./model/bookstore")
 const path = require('path');
 const { profile } = require("console");
 const axios = require('axios')
-const PORT = process.env.PORT || 3000;
+
 
 const app=express();
 mongoose.connect('mongodb://localhost:27017/bookstoreSamp');
@@ -83,6 +83,6 @@ app.post("/contactUs",async (req,res)=>{
     console.log(req.body);
 })
 
-app.listen(PORT,()=>{
+app.listen( process.env.PORT || 3000,()=>{
     console.log("server started at 3000");
 })
