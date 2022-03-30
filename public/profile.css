@@ -6,7 +6,8 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(library.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-image:url("https://res.cloudinary.com/dv7rioq5g/image/upload/v1648656484/library_d4g16v.jpg");
 }
 
 .container{
