@@ -53,7 +53,6 @@ app.get('/chat', function(req, res) {
 
 
 //CHAT CODE
-app.post
 io.sockets.on('connection', function(socket) {
     socket.on('username', function(username) {
         socket.username = username;
