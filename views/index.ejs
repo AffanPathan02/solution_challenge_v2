@@ -5,7 +5,8 @@
     <style>
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font: 13px Helvetica, Arial; background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url("library.jpg");}
+        body { font: 13px Helvetica, Arial; background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8));
+          background-image:url("https://res.cloudinary.com/dv7rioq5g/image/upload/v1648656484/library_d4g16v.jpg");}
         form { background: #fff; padding: 3px; position: fixed; bottom: 0; width: 100%; border-color: #000; border-top-style: solid; border-top-width: 1px;}
         form input { border-style: solid; border-width: 1px; padding: 10px; width: 85%; margin-right: .5%; }
         form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; margin-left: 2%; }
@@ -22,7 +23,7 @@
       <input id="txt" autocomplete="off" autofocus="on" oninput="isTyping()" placeholder="type your message here..." /><button>Send</button>
     </form>
     <script>
-            var socket = io.connect('https://book-o-buy.herokuapp.com');
+            var socket = io.connect('https://book-o-buy.herokuapp.com/chat');
 
             // submit text message without reload/refresh the page
             $('form').submit(function(e){
