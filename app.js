@@ -8,9 +8,13 @@ const axios = require('axios')
 const app=express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
+const DB ='mongodb+srv://malkira:suniscold@cluster0.bptot.mongodb.net/bookobuy?retryWrites=true&w=majority';
+
+mongoose.connect(DB).then(()=>{
+    console.log('connect successful');
+}).catch((err)=>console.log(err));
 
 
-mongoose.connect('mongodb://localhost:27017/bookstoreSamp');
 app.use(express.static('public'));
 
 app.set('view engine',"ejs")
