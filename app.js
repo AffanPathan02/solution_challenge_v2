@@ -110,6 +110,7 @@ app.post("/create",async (req,res)=>{
     //console.log(req.body);
     const newBook= Bookstore(req.body);
     await newBook.save();
+    res.redirect("/");
 })
 
 app.post("/contactUs",async (req,res)=>{
